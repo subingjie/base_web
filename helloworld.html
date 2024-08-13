@@ -1,12 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Simple Bar Chart</title>
+    <style>
+        /* CSS 样式 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .chart-container {
+            display: flex;
+            align-items: flex-end;
+            gap: 10px;
+            height: 300px;
+            border-left: 2px solid #000;
+            border-bottom: 2px solid #000;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .bar {
+            width: 50px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-align: center;
+            margin-bottom: 5px;
+            border-radius: 5px 5px 0 0;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .bar span {
+            display: block;
+            margin-top: 5px;
+        }
+
+        .x-axis {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .x-axis div {
+            text-align: center;
+        }
+    </style>
 </head>
+
 <body>
-    helloworld
-    
+    <h1>Simple Bar Chart</h1>
+    <div class="chart-container">
+        <div class="bar" style="height: 100px;">
+            <span>Jan</span>
+            <div>30</div>
+        </div>
+        <div class="bar" style="height: 150px;">
+            <span>Feb</span>
+            <div>45</div>
+        </div>
+        <div class="bar" style="height: 200px;">
+            <span>Mar</span>
+            <div>60</div>
+        </div>
+        <div class="bar" style="height: 120px;">
+            <span>Apr</span>
+            <div>40</div>
+        </div>
+        <div class="bar" style="height: 180px;">
+            <span>May</span>
+            <div>55</div>
+        </div>
+    </div>
+    <div class="x-axis">
+        <div>Jan</div>
+        <div>Feb</div>
+        <div>Mar</div>
+        <div>Apr</div>
+        <div>May</div>
+    </div>
 </body>
+
 </html>
